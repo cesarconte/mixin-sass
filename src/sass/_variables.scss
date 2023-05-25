@@ -3,7 +3,53 @@ $titleColor: crimson;
 $TextColorOne: darkorchid;
 $TextColortwo: green;
 
-@mixin testMixin() {
-  background: black;
-  border-radius: 50%;
+@mixin section4Mixin(
+  $background,
+  $width,
+  $height,
+  $margin,
+  $display,
+  $flex-direction,
+  $justify-content,
+  $align-itmes
+) {
+  background: $background;
+  width: $width;
+  height: $height;
+  margin: $margin;
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-itmes;
+}
+
+@mixin boxMixin($color, $border-radius, $border, $box-shadow) {
+  background: $color;
+  border-radius: $border-radius;
+  border: $border;
+  box-shadow: $box-shadow;
+  width: 30vmin;
+  height: 30vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin imgMixin($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+
+@mixin pMixin() {
+  color: whitesmoke;
+  text-shadow: 0 0 10px pink;
+  font-size: 5vmin;
+  font-weight: 700;
+}
+
+@mixin sasslogo() {
+  width: 20%;
+  height: 20%;
 }

@@ -2,14 +2,40 @@
 
 main {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
   color: $TextColorOne;
   #section-two {
     color: $TextColortwo;
   }
-}
-
-div .boxes {
-  @include testMixin();
+  #section-four {
+    @include section4Mixin(
+      #558378,
+      100vw,
+      75vmin,
+      10vh auto 0,
+      flex,
+      column,
+      center,
+      center
+    );
+    .box {
+      @include boxMixin(
+        #e2e2e2bb,
+        50%,
+        5px solid rgb(5, 82, 69),
+        0 0 3vw rgba(0, 0, 0, 0.452)
+      );
+      img {
+        @include imgMixin(90%, 90%, 50%);
+      }
+    }
+    p {
+      @include pMixin();
+    }
+    #sass-logo {
+      @include sasslogo();
+    }
+  }
 }
