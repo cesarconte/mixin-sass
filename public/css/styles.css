@@ -8,6 +8,11 @@ main #section-two {
   color: green;
 }
 
+div .boxes {
+  background: black;
+  border-radius: 50%;
+}
+
 body {
   background-color: burlywood;
 }

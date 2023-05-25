@@ -3,3 +3,7 @@ $titleColor: crimson;
 $TextColorOne: darkorchid;
 $TextColortwo: green;
 
+@mixin testMixin() {
+  background: black;
+  border-radius: 50%;
+}

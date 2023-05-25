@@ -1,12 +1,15 @@
+@import "variables";
 
-@import 'variables';
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: $TextColorOne;
+  #section-two {
+    color: $TextColortwo;
+  }
+}
 
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: $TextColorOne;
-    #section-two{
-        color: $TextColortwo;
-    }
+div .boxes {
+  @include testMixin();
 }
